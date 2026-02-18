@@ -33,4 +33,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-accent-2);
+
+}
+/* FIX: Seite muss scrollen dürfen */
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  position: static !important;
 }
