@@ -154,4 +154,31 @@
     color: var(--color-text-secondary);
     text-transform: uppercase;
     letter-spacing: 2px;
+
+}
+/* ===== CLICK FIX FOR NAVBAR ===== */
+
+/* Background must not block clicks */
+.hero-background,
+.hero-overlay,
+.hero-bg-image {
+  pointer-events: none;
+}
+
+/* Navbar always on top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Hamburger / Links clickable */
+.nav-link,
+.hamburger {
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 10000;
+  position: relative;
 }
