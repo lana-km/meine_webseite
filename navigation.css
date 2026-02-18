@@ -98,3 +98,12 @@
     transition: var(--transition);
 
 }
+
+/* FIX: Mobile Menü blockiert sonst Klick/Scroll */
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.active {
+  display: flex;
+}
