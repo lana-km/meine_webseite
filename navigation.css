@@ -37,11 +37,18 @@
     color: var(--color-accent);
 }
 
+/* FORCE mobile menu */
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
+  pointer-events: auto;
 }
+
+.nav-menu.active {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
 
 .nav-link {
     color: var(--color-text);
@@ -89,4 +96,5 @@
     height: 3px;
     background: var(--color-text);
     transition: var(--transition);
+
 }
