@@ -2,94 +2,231 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
-    <title>Lana Kara Mohammed | Webdesignerin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS Files (FIX: files are in repo root) -->
-    <link rel="stylesheet" href="variables.css">
+  <title>Lana Kara Mohammed | Webdesignerin</title>
+
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="variables.css">
   <link rel="stylesheet" href="base.css">
-   <link rel="stylesheet" href="hero.css">
-       <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="components.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="responsive.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">LKM</span>
-                <span class="logo-dot">.</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">Über mich</a></li>
-                <li><a href="#contact" class="nav-link">Kontakt</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="console.log('INLINE CLICK')">
 
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+      <div class="logo">
+        <span class="logo-text">LKM</span>
+        <span class="logo-dot">.</span>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">Über mich</a></li>
+        <li><a href="#contact" class="nav-link">Kontakt</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-background">
+
+      <img
+        src="https://mgx-backend-cdn.metadl.com/generate/images/867098/2025-12-26/bbf951c9-bdb0-46bc-84ad-e2eca1258b3f.png"
+        alt="Abstract Design"
+        class="hero-bg-image">
+
+      <div class="hero-overlay"></div>
+
+    </div>
+
+    <div class="hero-content">
+
+      <div class="hero-text fade-in">
+
+        <h1 class="hero-title">
+          Kreatives<br>
+          <span class="gradient-text">Webdesign</span><br>
+          für deine Marke
+        </h1>
+
+        <p class="hero-subtitle">
+          Moderne, responsive Websites die begeistern und konvertieren
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">Portfolio ansehen</a>
+          <a href="#contact" class="btn btn-secondary">Projekt starten</a>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-background">
-            <img src="https://mgx-backend-cdn.metadl.com/generate/images/867098/2025-12-26/bbf951c9-bdb0-46bc-84ad-e2eca1258b3f.png"
-                alt="Abstract Design" class="hero-bg-image">
-            <div class="hero-overlay"></div>
+      </div>
+
+      <div class="scroll-indicator">
+
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
-        <div class="hero-content">
-            <div class="hero-text fade-in">
-                <h1 class="hero-title">
-                    Kreatives<br>
-                    <span class="gradient-text">Webdesign</span><br>
-                    für deine Marke
-                </h1>
-                <p class="hero-subtitle">Moderne, responsive Websites die begeistern und konvertieren</p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Portfolio ansehen</a>
-                    <a href="#contact" class="btn btn-secondary">Projekt starten</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <p>Scroll</p>
-            </div>
+
+        <p>Scroll</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+
+    <div class="container">
+
+      <div class="section-header fade-in-up">
+
+        <span class="section-label">Meine Arbeiten</span>
+
+        <h2 class="section-title">Ausgewählte Projekte</h2>
+
+        <p class="section-description">
+          Eine Auswahl meiner neuesten Webdesign-Projekte
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-header fade-in-up">
+
+        <span class="section-label">Was ich anbiete</span>
+
+        <h2 class="section-title">Meine Services</h2>
+
+        <p class="section-description">
+          Professionelle Webdesign-Lösungen für jeden Bedarf
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-header fade-in-up">
+
+        <span class="section-label">Über mich</span>
+
+        <h2 class="section-title">Lana Kara Mohammed</h2>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-header fade-in-up">
+
+        <span class="section-label">Kontakt</span>
+
+        <h2 class="section-title">Lass uns zusammenarbeiten</h2>
+
+        <p class="section-description">
+          Bereit für dein nächstes Projekt? Schreib mir!
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div class="footer-logo">
+          <span class="logo-text">LKM</span>
+          <span class="logo-dot">.</span>
         </div>
-    </section>
 
-    <!-- (…dein restlicher HTML bleibt unverändert…) -->
+        <p class="footer-text">
+          © 2024 Lana Kara Mohammed. Alle Rechte vorbehalten.
+        </p>
 
-    <!-- JavaScript Files (FIX: files are in repo root) -->
-     <script src="navigation.js" defer></script>
-     <script src="scroll.js" defer></script>>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="navigation.js" defer></script>
+  <script src="scroll.js" defer></script>
   <script src="animations.js" defer></script>
-    <script src="contact.js" defer></script>
-    <script src="effects.js" defer></script>
-    <script src="main-nomodule.js" defer></script>
+  <script src="contact.js" defer></script>
+  <script src="effects.js" defer></script>
+  <script src="main-nomodule.js" defer></script>
 
 </body>
-
 </html>
